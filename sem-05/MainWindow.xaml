@@ -1,0 +1,19 @@
+﻿<Window x:Class="sem_05.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sem_05"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="900">
+    <Grid>
+        <Button x:Name="botonListaCliente" Content="Listar Clientes"  HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top" Click="botonListaCliente_Click"/>
+        <!--<Button x:Name="botonListaProveedor" Content="Listar Proveedores"  HorizontalAlignment="Left" Margin="76,83,0,0" VerticalAlignment="Top" Click="botonListaProveedor_Click"-->
+        <DataGrid ItemsSource="{Binding Cliente}" x:Name="listadoClientes" HorizontalAlignment="Left" Height="200" Margin="10,0,0,0" VerticalAlignment="Center" Width="450"/>
+        <!--<DataGrid ItemsSource="{Binding Proveedor}" x:Name="listadoProveedores" HorizontalAlignment="Left" Height="200" Margin="40,0,0,0" VerticalAlignment="Center" Width="450"/>-->
+
+    </Grid>
+
+
+</Window>
+
