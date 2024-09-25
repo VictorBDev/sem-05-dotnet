@@ -5,13 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sem_05"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="900">
+        Title="MainWindow" Height="500" Width="1000">
     <Grid>
-        <Button x:Name="botonListaCliente" Content="Listar Clientes"  HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top" Click="botonListaCliente_Click"/>
+        <Button x:Name="botonListaClientes" Content="Listar Clientes"  HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Click="botonListaCliente_Click"/>
+        <Button x:Name="botonActualizar" Content="Actualizar"  HorizontalAlignment="Left" Margin="123,108,0,0" VerticalAlignment="Top" Click="botonActualizarCliente_Click"/>
+        <Button x:Name="botonEliminar" Content="Eliminar"  HorizontalAlignment="Left" Margin="236,108,0,0" VerticalAlignment="Top" Click="botonActualizarCliente_Click"/>
         <!--<Button x:Name="botonListaProveedor" Content="Listar Proveedores"  HorizontalAlignment="Left" Margin="76,83,0,0" VerticalAlignment="Top" Click="botonListaProveedor_Click"-->
-        <DataGrid ItemsSource="{Binding Cliente}" x:Name="listadoClientes" HorizontalAlignment="Left" Height="200" Margin="10,0,0,0" VerticalAlignment="Center" Width="450"/>
+        <DataGrid ItemsSource="{Binding Cliente}" x:Name="listadoClientes" HorizontalAlignment="Left" Height="200" Margin="11,169,0,0" VerticalAlignment="Top" Width="450"/>
         <!--<DataGrid ItemsSource="{Binding Proveedor}" x:Name="listadoProveedores" HorizontalAlignment="Left" Height="200" Margin="40,0,0,0" VerticalAlignment="Center" Width="450"/>-->
-
+        <TextBox x:Name="txtIdCliente" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="txtNombreCompañia" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="txtNombreContacto" HorizontalAlignment="Left" Margin="93,26,0,0" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="txtCargoContacto" HorizontalAlignment="Left" Margin="93,69,0,0" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="txtDireccion" HorizontalAlignment="Left" Margin="175,26,0,0" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="txtCiudad" HorizontalAlignment="Left" Margin="175,69,0,0" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="txtRegion" HorizontalAlignment="Left" Margin="246,26,0,0" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="txtCodPostal" HorizontalAlignment="Left" Margin="246,69,0,0" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="txtPais" HorizontalAlignment="Left" Margin="334,26,0,0" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Margin="334,69,0,0" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="txtFax" HorizontalAlignment="Left" Margin="431,26,0,0" VerticalAlignment="Top" Width="60"/>
+        <!-- Agrega los demás TextBox para NombreContacto, CargoContacto, Ciudad -->
     </Grid>
 
 
